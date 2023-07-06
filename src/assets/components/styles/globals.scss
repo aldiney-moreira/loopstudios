@@ -1,0 +1,22 @@
+// Typography
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+:root {
+  font-family: 'Alata', sans-serif;
+  font-size: 62.5%;
+  // font-family: 'Josefin Sans', sans-serif;
+  // font-size: 15px / 93.75%;
+}
+
+// Colors
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$dark-gray: hsl(0, 0%, 55%);
+$very-dark-gray: hsl(0, 0%, 41%);
+
+// Layout
+$screen-sm: 525.008px;
+$screen-md: 768px;
+$screen-lg: 968px;
+$screen-xl: 1160px;
+$screen-grid: 1305.008px;
