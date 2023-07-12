@@ -7,7 +7,7 @@ export default function Header(props) {
   const DEFAULT_MENU_ITEMS = [
     {
       text: 'About',
-      link: 'https://www.youtube.com/results?search_query=readme+front+end+mentor'
+      link: '#'
     },
     {
       text: 'Careers',
