@@ -34,14 +34,19 @@ export default function Header(props) {
     setIsOpen(!isOpen);
   };
 
+  const classStylesHeader = {
+    menu: `header__menu ${isOpen ? 'active' : ''}`,
+    hamburger: `header__hamburger ${isOpen ? 'active' : ''}`,
+  };
+
   return (
     <header className="header">
       <div className="container">
         <nav className="header__nav">
           <picture className="header__picture">
-            <img className="header__logo" src={logo} alt="Logo" />
+            <img className="header__logo" src={logo} alt="Loopstudios" />
           </picture>
-          <div className={`header__menu ${isOpen ? 'active' : ''}`}>
+          <div className={classStylesHeader.menu}>
             <ul className="header__items container">
               {menuItems.map((item, index) => (
                 <li key={index}>
@@ -53,7 +58,7 @@ export default function Header(props) {
             </ul>
           </div>
           <div
-            className={`header__hamburger ${isOpen ? 'active' : ''}`}
+            className={classStylesHeader.hamburger}
             onClick={toggleMenu}
           >
             <span className="header__bar"></span>
