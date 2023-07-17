@@ -1,9 +1,11 @@
 @use "../../../assets/components/styles/index" as *;
 
 .header {
-  background-image: url('../../../assets/images/mobile/image-hero.jpg');
-  background-size: cover;
-  background-position: center;
+  background: {
+    image: url('../../../assets/images/mobile/image-hero.jpg');
+    size: cover;
+    position: center;
+  }
   color: $white;
   padding: 4rem 0;
   font-family: 'Josefin Sans', sans-serif;
@@ -98,10 +100,12 @@
   }
 
   &__item {
-    font-size: 2.5rem;
+    font: {
+      size: 2.5rem;
+      weight: bold;
+    }
     text-transform: uppercase;
     height: 100%;
-    font-weight: bold;
     @include for-size(screen-md) {
       font-size: 2rem;
       text-transform: capitalize;
@@ -129,8 +133,10 @@
 
   &__title {
     display: inline-block;
-    font-size: 4rem;
-    font-weight: normal;
+    font: {
+      size: 4rem;
+      weight: normal;
+    }
     text-transform: uppercase;
     margin: 16.25rem 0;
     padding: 2.5rem;
