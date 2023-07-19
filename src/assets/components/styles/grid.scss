@@ -1,5 +1,5 @@
 .container {
-  padding: 0rem 23.008px;
+  padding: 0rem $padding;
 
   @include for-size(screen-grid) {
     padding: 0;
