@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import logo from "../../../assets/images/logo.svg";
 
-// import "./header.scss";
+import "./navmenu.scss";
 
 export default function NavMenu(props) {
   const DEFAULT_MENU_ITEMS = [
@@ -34,23 +34,22 @@ export default function NavMenu(props) {
     setIsOpen(!isOpen);
   };
 
-  const classStylesHeader = {
-    nav: `header__nav${props.hamburger ? '-hamburger' : ''}`,
-    menu: `header__menu ${props.hamburger && isOpen ? 'active' : ''}`,
-    hamburger: `header__hamburger ${isOpen ? 'active' : ''}`,
-    items: props.hamburger ? ` ` : 'header__items',
+  const classStylesNavMenu = {
+    nav: `nav-menu${props.hamburger ? '--hamburger' : ''}`,
+    menu: `nav-menu__menu ${props.hamburger && isOpen ? 'active' : ''}`,
+    hamburger: `nav-menu__hamburger ${isOpen ? 'active' : ''}`,
   };
 
   return (
-    <nav className={classStylesHeader.nav}>
-      <picture className="header__picture">
-        <img className="header__logo" src={logo} alt="Loopstudios" />
+    <nav className={classStylesNavMenu.nav}>
+      <picture className="nav-menu__picture">
+        <img className="nav-menu__logo" src={logo} alt="Loopstudios" />
       </picture>
-      <div className={classStylesHeader.menu}>
-        <ul className="header__items">
+      <div className={classStylesNavMenu.menu}>
+        <ul className="nav-menu__items">
           {menuItems.map((item, index) => (
             <li key={index}>
-              <a className="header__item" href={item.link}>
+              <a className="nav-menu__item" href={item.link}>
                 {item.text}
               </a>
             </li>
@@ -59,12 +58,12 @@ export default function NavMenu(props) {
       </div>
       {props.hamburger &&
         <div
-          className={classStylesHeader.hamburger}
+          className={classStylesNavMenu.hamburger}
           onClick={toggleMenu}
         >
-          <span className="header__bar"></span>
-          <span className="header__bar"></span>
-          <span className="header__bar"></span>
+          <span className="nav-menu__bar"></span>
+          <span className="nav-menu__bar"></span>
+          <span className="nav-menu__bar"></span>
         </div>
       }
     </nav>
