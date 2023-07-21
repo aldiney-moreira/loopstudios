@@ -1,0 +1,36 @@
+@use "../../../assets/components/styles/index" as *;
+
+.header {
+  background: {
+    image: url('../../../assets/images/mobile/image-hero.jpg');
+    size: cover;
+    position: center;
+  }
+  color: $white;
+  padding: 4rem 0;
+  font-family: 'Josefin Sans', sans-serif;
+  position: relative;
+
+  @include for-size(screen-md) {
+    padding-top: 7.75rem;
+    background-image: url('../../../assets/images/desktop/image-hero.jpg');
+  }
+
+  &__title {
+    display: inline-block;
+    font: {
+      size: 4rem;
+      weight: normal;
+    }
+    text-transform: uppercase;
+    margin: 16.25rem 0;
+    padding: 2.5rem;
+    padding-bottom: 1.5rem;
+    border: 0.25rem solid $white;
+    width: 100%;
+    @include for-size(screen-md) {
+      max-width: 60.5rem;
+      font-size: 7rem;
+    }
+  }
+}
