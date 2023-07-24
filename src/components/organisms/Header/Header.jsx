@@ -6,7 +6,7 @@ export default function Header(props) {
     <header className="header">
       <div className="container">
         <NavMenu hamburger />
-        <h1 className="header__title">Immersive experiences that deliver</h1>
+        <h1 className="header__title  text--h1">Immersive experiences that deliver</h1>
       </div>
     </header>
   );

@@ -35,14 +35,9 @@
   }
 
   &__item {
-    font: {
-      size: 2rem;
-      weight: bold;
-    }
     position: relative;
 
     @include for-size(screen-md) {
-      font-size: 2rem;
       text-transform: capitalize;
     }
   
@@ -63,7 +58,6 @@
       transform: translateX(-50%) scaleX(1.25);
       transform-origin: left;
     }
-  
   }
 
   &__bar {
@@ -123,7 +117,6 @@
   & .nav-menu__item {
     text-transform: uppercase;
     @include for-size(screen-md) {
-      font-size: 2rem;
       text-transform: capitalize;
     }
   }
