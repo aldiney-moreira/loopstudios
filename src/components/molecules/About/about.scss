@@ -27,9 +27,13 @@
     text-align: center;
     max-width: 43ch;
     margin: 0 auto;
+    max-width: 25.5rem;
 
-    @include for-size(screen-lg) {
+    @include for-size(screen-sm) {
       max-width: 55.75rem;
+    }
+    
+    @include for-size(screen-lg) {
       text-align: left;
       position: absolute;
       bottom: 0;
