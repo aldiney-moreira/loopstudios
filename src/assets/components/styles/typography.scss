@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+@mixin typography($color: $white, $family: 'Josefin Sans', $size: 1rem, $line-height: 1, $weight: normal) {
+  color: $color;
+  font: {
+    family: $family, sans-serif;
+    size: $size;
+    weight: $weight;
+  }
+  line-height: $line-height;
+}
+
+.text {
+  &--description {
+    @include typography($size: 1.5rem, $line-height: 1.5, $weight: bold);
+    @include for-size(screen-md) {
+      font-size: 1.875rem;
+    }
+  }
+
+  &--small {
+    @include typography($size: 0.938rem);
+    @include for-size(screen-md) {
+      font-size: 1.1725rem;
+    }
+  }
+
+  &--big {
+    @include typography($size: 2rem);
+    @include for-size(screen-md) {
+      font-size: 2.5rem;
+    }
+  }
+
+  // Titles
+  &--h1 {
+    @include typography($size: 4rem);     
+    @include for-size($screen-md) {
+      font-size: 7rem;
+    }
+  }
+
+  &--h2 {
+    @include typography($size: 3rem);
+    @include for-size($screen-md) {
+      font-size: 5.25rem;
+    }
+  }
+  
+  &--h3 {
+    @include typography($size: 2rem);
+    @include for-size($screen-md) {
+      font-size: 3.5rem;
+    }
+  }
+
+  // Colors
+  &--white {
+    color: $white;
+  }
+
+  &--black {
+    color: $black;
+  }
+
+  &--dark-gray {
+    color: $dark-gray;
+  }
+
+  &--very-dark-gray {
+    color: $very-dark-gray;
+  }
+}
