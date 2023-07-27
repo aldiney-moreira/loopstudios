@@ -34,7 +34,8 @@
 
   // Titles
   &--h1 {
-    @include typography($size: 4rem);     
+    @include typography($size: 4rem);
+    text-transform: uppercase;     
     @include for-size($screen-md) {
       font-size: 7rem;
     }
@@ -42,6 +43,7 @@
 
   &--h2 {
     @include typography($size: 3rem);
+    text-transform: uppercase;
     @include for-size($screen-md) {
       font-size: 5.25rem;
     }
@@ -49,6 +51,7 @@
   
   &--h3 {
     @include typography($size: 2rem);
+    text-transform: uppercase;
     @include for-size($screen-md) {
       font-size: 3.5rem;
     }
