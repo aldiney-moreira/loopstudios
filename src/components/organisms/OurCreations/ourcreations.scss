@@ -1,0 +1,48 @@
+@use "../../../assets/components/styles/index" as *;
+
+.our-creations {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 10rem;
+
+  &__title {
+    margin-bottom: 2.5rem;
+  }
+
+  &__button {
+    padding: 1rem 3rem;
+    border: 2px solid $black;
+  }
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+
+  
+  &__background {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    display: flex;
+    align-items: end;
+  }
+
+  &__item {
+    height: 12rem;
+  }
+    
+  &__title {
+    text-align: left;
+    padding: {
+      left: 2.25rem;
+      bottom: 2rem;
+    };
+    color: rgba($white, 0.7);
+  }
+}
