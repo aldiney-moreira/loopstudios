@@ -7,14 +7,29 @@
   flex-direction: column;
   gap: 2.5rem;
   margin-bottom: 10rem;
+  @include for-size(screen-lg) {
+    text-align: start;
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 1fr auto;
+  }
 
   &__title {
     margin-bottom: 2.5rem;
+    @include for-size(screen-lg) {
+      margin-bottom: 0;
+    }
   }
 
   &__button {
     padding: 1rem 3rem;
     border: 2px solid $black;
+    cursor: pointer;
+    
+    &:hover {
+      background: $black;
+      color: $white;
+    }
   }
 }
 
@@ -24,6 +39,14 @@
   gap: 2rem;
   width: 100%;
 
+  @include for-size(screen-lg) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    @include for-size(screen-lg) {
+      order: 1;
+      grid-column: 1 /-1;
+    }
+  }
   
   &__background {
     height: 100%;
