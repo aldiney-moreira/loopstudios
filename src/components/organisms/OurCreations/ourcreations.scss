@@ -24,7 +24,6 @@
   &__button {
     padding: 1rem 3rem;
     border: 2px solid $black;
-    cursor: pointer;
     
     &:hover {
       background: $black;
@@ -54,6 +53,13 @@
     background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
     display: flex;
     align-items: end;
+    &:hover {
+      background: rgba(255, 255, 255, 0.5);
+      & .card-list__title {
+        color: $black;
+
+      }
+    }
   }
 
   &__item {
