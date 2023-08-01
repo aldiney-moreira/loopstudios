@@ -1,0 +1,48 @@
+@use "../../../assets/components/styles/index" as *;
+
+.card-list {
+  &__item {
+    position: relative;
+    color: $gray;
+    &::before {
+      content: "";
+      transition: 0.3s;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0)
+      );
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include for-size(screen-sm) {
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0)
+        );
+      }
+    }
+    &:hover {
+      &::before {
+        background: rgba(255, 255, 255, 0.7);
+      }
+      & .card-list__title {
+        color: $black;
+      }
+    }
+  }
+
+  &__title {
+    text-align: left;
+    padding: {
+      left: 2.25rem;
+      bottom: 2rem;
+    }
+    bottom: 0;
+    position: absolute;
+    max-width: 10ch;
+  }
+}

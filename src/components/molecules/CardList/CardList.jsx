@@ -1,4 +1,3 @@
-import React from "react";
 import "./cardlist.scss";
 
 import image_deepearth_mobile from "../../../assets/images/mobile/image-deep-earth.jpg";
@@ -24,11 +23,12 @@ import image__curiosity_desktop from "../../../assets/images/desktop/image-curio
 
 import image__fisheye_mobile from "../../../assets/images/mobile/image-fisheye.jpg";
 import image__fisheye_desktop from "../../../assets/images/desktop/image-fisheye.jpg";
+import CardItem from "../CardItem/CardItem";
 
 export default function CardList(props) {
   const CardListData = [
     {
-      text: "Deep <br /> earth",
+      text: "Deep earth",
       background: {
         mobile: image_deepearth_mobile,
         desktop: image_deepearth_desktop,
@@ -37,7 +37,7 @@ export default function CardList(props) {
       link: "#",
     },
     {
-      text: "Night <br /> arcade",
+      text: "Night arcade",
       background: {
         mobile: image_nightarcade_mobile,
         desktop: image_nightarcade_desktop,
@@ -46,7 +46,7 @@ export default function CardList(props) {
       link: "#",
     },
     {
-      text: "Soccer <br /> team VR",
+      text: "Soccer team VR",
       background: {
         mobile: image_soccerteam_mobile,
         desktop: image_soccerteam_desktop,
@@ -55,7 +55,7 @@ export default function CardList(props) {
       link: "#",
     },
     {
-      text: "The <br /> grid",
+      text: "The grid",
       background: {
         mobile: image_grid_mobile,
         desktop: image_grid_desktop,
@@ -64,7 +64,7 @@ export default function CardList(props) {
       link: "#",
     },
     {
-      text: "From up <br /> above VR",
+      text: "From up above VR",
       background: {
         mobile: image_fromabove_mobile,
         desktop: image_fromabove_desktop,
@@ -73,7 +73,7 @@ export default function CardList(props) {
       link: "#",
     },
     {
-      text: "Pocket <br /> borealis",
+      text: "Pocket borealis",
       background: {
         mobile: image__pocketborealis_mobile,
         desktop: image__pocketborealis_desktop,
@@ -82,7 +82,7 @@ export default function CardList(props) {
       link: "#",
     },
     {
-      text: "The <br /> curiosity",
+      text: "The curiosity",
       background: {
         mobile: image__curiosity_mobile,
         desktop: image__curiosity_desktop,
@@ -91,7 +91,7 @@ export default function CardList(props) {
       link: "#",
     },
     {
-      text: "Make it <br /> fisheye",
+      text: "Make it fisheye",
       background: {
         mobile: image__fisheye_mobile,
         desktop: image__fisheye_desktop,
@@ -104,23 +104,12 @@ export default function CardList(props) {
   return (
     <div className="card-list">
       {CardListData.map((item, idx) => (
-        <a key={idx} className="card-list__item">
-          <picture className="card-list__image">
-            <source
-              srcSet={item.background.mobile}
-              media="(max-width: 768px)"
-            />
-            <img src={item.background.desktop} />
-          </picture>
-          <p className="card-list__title text--h3">
-            {item.text.split("<br />").map((text, idx) => (
-              <React.Fragment key={idx}>
-                {text}
-                {idx !== item.text.split("<br />").length - 1 && <br />}
-              </React.Fragment>
-            ))}
-          </p>
-        </a>
+        <CardItem
+          background={[item.background.mobile, item.background.desktop]}
+          text={item.text}
+          link={item.link}
+          key={idx}
+        />
       ))}
     </div>
   );
