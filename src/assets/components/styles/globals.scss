@@ -1,8 +1,8 @@
 // Typography
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 
 :root {
-  font-family: 'Alata', sans-serif;
+  font-family: "Alata", sans-serif;
   font-size: 62.5%;
   // font-family: 'Josefin Sans', sans-serif;
   // font-size: 15px / 93.75%;
@@ -11,6 +11,7 @@
 // Colors
 $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 0%);
+$gray: hsl(0, 0%, 85%);
 $dark-gray: hsl(0, 0%, 55%);
 $very-dark-gray: hsl(0, 0%, 41%);
 
