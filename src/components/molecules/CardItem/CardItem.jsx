@@ -2,7 +2,7 @@ import React from "react";
 import "./carditem.scss";
 
 export default function CardItem({ background, text, link }) {
-  let [background_mobile, background_desktop] = background;
+  const [background_mobile, background_desktop] = background;
   return (
     <a className="card-list__item" href={link}>
       <picture className="card-list__image">
