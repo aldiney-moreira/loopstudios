@@ -1,4 +1,3 @@
-import React from "react";
 import "./carditem.scss";
 
 export default function CardItem({ background, text, link }) {
