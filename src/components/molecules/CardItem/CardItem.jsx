@@ -1,4 +1,4 @@
-import "./carditem.scss";
+import "./cardItem.scss";
 
 export default function CardItem({ background, text, link }) {
   const [background_mobile, background_desktop] = background;

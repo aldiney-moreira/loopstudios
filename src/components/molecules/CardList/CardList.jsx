@@ -1,4 +1,4 @@
-import "./cardlist.scss";
+import "./cardList.scss";
 
 import image_deepearth_mobile from "../../../assets/images/mobile/image-deep-earth.jpg";
 import image_deepearth_desktop from "../../../assets/images/desktop/image-deep-earth.jpg";
