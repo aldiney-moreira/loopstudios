@@ -1,0 +1,14 @@
+@use "../../../assets/components/styles/index" as *;
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include for-size(screen-sm) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    order: 1;
+    grid-column: 1 /-1;
+  }
+}

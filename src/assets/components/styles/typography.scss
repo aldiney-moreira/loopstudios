@@ -1,6 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 
-@mixin typography($color: $white, $family: 'Josefin Sans', $size: 1rem, $line-height: 1, $weight: normal) {
+@mixin typography(
+  $color: inherit,
+  $family: "Josefin Sans",
+  $size: 1rem,
+  $line-height: 1,
+  $weight: normal
+) {
   color: $color;
   font: {
     family: $family, sans-serif;
@@ -32,9 +38,19 @@
     }
   }
 
+  &--button {
+    @include typography($size: 1.75rem, $line-height: 1.5, $family: "Alata");
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    @include for-size(screen-md) {
+      font-size: 1.875rem;
+    }
+  }
+
   // Titles
   &--h1 {
-    @include typography($size: 4rem);     
+    @include typography($size: 4rem);
+    text-transform: uppercase;
     @include for-size($screen-md) {
       font-size: 7rem;
     }
@@ -42,13 +58,15 @@
 
   &--h2 {
     @include typography($size: 3rem);
+    text-transform: uppercase;
     @include for-size($screen-md) {
       font-size: 5.25rem;
     }
   }
-  
+
   &--h3 {
-    @include typography($size: 2rem);
+    @include typography($size: 2.25rem);
+    text-transform: uppercase;
     @include for-size($screen-md) {
       font-size: 3.5rem;
     }
