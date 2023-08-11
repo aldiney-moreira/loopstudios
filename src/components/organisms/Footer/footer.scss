@@ -1,0 +1,30 @@
+@use "../../../assets/components/styles/index" as *;
+
+.footer {
+  background-color: $black;
+  color: $white;
+  padding-block: 5rem;
+
+  &__social {
+    padding-bottom: 2.75rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__icon {
+    width: 2.75rem;
+  }
+
+  &__copyright {
+    text-align: center;
+    @include typography(
+      $size: 1.75rem,
+      $family: "Alata",
+      $color: $very-dark-gray
+    );
+    @include for-size(screen-md) {
+      font-size: 2.5rem;
+    }
+  }
+}
