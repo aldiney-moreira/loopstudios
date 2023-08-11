@@ -8,33 +8,37 @@ import logo_instagram from "../../../assets/images/icon-instagram.svg";
 export default function Footer(props) {
   return (
     <footer className="footer">
-      <div className="container">
-        <NavMenu />
-        <ul className="footer__social">
-          <li className="footer__icon">
-            <a href="#">
-              <img src={logo_facebook} alt="" />
-            </a>
-          </li>
-          <li className="footer__icon">
-            <a href="#">
-              <img src={logo_twitter} alt="" />
-            </a>
-          </li>
-          <li className="footer__icon">
-            <a href="#">
-              <img src={logo_pinterest} alt="" />
-            </a>
-          </li>
-          <li className="footer__icon">
-            <a href="#">
-              <img src={logo_instagram} alt="" />
-            </a>
-          </li>
-        </ul>
-        <p className="footer__copyright">
-          © 2021 Loopstudios. All rights reserved.
-        </p>
+      <div className="container footer__grid">
+        <div className="footer__left">
+          <NavMenu />
+        </div>
+        <div className="footer__right">
+          <ul className="footer__social">
+            <li className="footer__icon">
+              <a href="#">
+                <img src={logo_facebook} alt="" />
+              </a>
+            </li>
+            <li className="footer__icon">
+              <a href="#">
+                <img src={logo_twitter} alt="" />
+              </a>
+            </li>
+            <li className="footer__icon">
+              <a href="#">
+                <img src={logo_pinterest} alt="" />
+              </a>
+            </li>
+            <li className="footer__icon">
+              <a href="#">
+                <img src={logo_instagram} alt="" />
+              </a>
+            </li>
+          </ul>
+          <p className="footer__copyright">
+            © 2021 Loopstudios. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   );
