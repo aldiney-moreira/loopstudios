@@ -4,7 +4,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 2rem;
   justify-content: space-between;
   align-items: center;
 
@@ -27,8 +26,10 @@
     flex-direction: column;
     gap: 2.5rem;
     align-items: center;
+    padding-block: 5rem;
 
     @include for-size(screen-sm) {
+      padding: 0;
       margin: 0.75rem;
       flex-direction: row;
     }
