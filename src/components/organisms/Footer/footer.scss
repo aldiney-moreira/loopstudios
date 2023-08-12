@@ -24,7 +24,6 @@
     align-items: center;
     @include for-size(screen-lg) {
       align-items: end;
-      // justify-content: end;
     }
   }
 
@@ -47,10 +46,28 @@
 
   &__icon {
     width: 2.75rem;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -1rem;
+      left: calc(50% - 0.15rem);
+      width: 2.25rem;
+      height: 0.15rem;
+      background-color: $white;
+      transform: translateX(-50%) scaleX(0);
+      transition: transform 0.3s ease-in-out;
+      transform-origin: right;
+    }
+
+    &:hover:after {
+      transform: translateX(-50%) scaleX(1.25);
+      transform-origin: left;
+    }
   }
 
   &__copyright {
-    // text-align: center;
     @include typography(
       $size: 1.75rem,
       $family: "Alata",
