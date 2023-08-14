@@ -52,18 +52,14 @@
       content: "";
       position: absolute;
       bottom: -1rem;
-      left: calc(50% - 0.15rem);
-      width: 2.25rem;
+      width: 0;
       height: 0.15rem;
       background-color: $white;
-      transform: translateX(-50%) scaleX(0);
-      transition: transform 0.3s ease-in-out;
-      transform-origin: right;
+      transition: 0.3s ease-in-out;
     }
 
     &:hover:after {
-      transform: translateX(-50%) scaleX(1.25);
-      transform-origin: left;
+      width: 100%;
     }
   }
 
