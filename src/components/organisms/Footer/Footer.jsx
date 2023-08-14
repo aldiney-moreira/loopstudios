@@ -9,10 +9,10 @@ export default function Footer(props) {
   return (
     <footer className="footer">
       <div className="container footer__grid">
-        <div className="footer__left">
+        <div className="footer__navigation">
           <NavMenu />
         </div>
-        <div className="footer__right">
+        <div className="footer__company">
           <ul className="footer__social">
             <li className="footer__icon">
               <a href="#">
