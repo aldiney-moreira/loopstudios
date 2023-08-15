@@ -31,6 +31,7 @@
     padding-bottom: 2.75rem;
     display: flex;
     gap: 2rem;
+    user-select: none;
 
     @include for-size(screen-sm) {
       padding-block: 5rem;

@@ -35,6 +35,10 @@
     }
   }
 
+  &__image {
+    user-select: none;
+  }
+
   &__title {
     text-align: left;
     padding: {
