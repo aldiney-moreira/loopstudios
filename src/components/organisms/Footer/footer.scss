@@ -27,43 +27,6 @@
     }
   }
 
-  &__social {
-    padding-bottom: 2.75rem;
-    display: flex;
-    gap: 2rem;
-    user-select: none;
-
-    @include for-size(screen-sm) {
-      padding-block: 5rem;
-    }
-
-    @include for-size(screen-lg) {
-      padding: {
-        bottom: 2.75rem;
-        top: 0;
-      }
-    }
-  }
-
-  &__icon {
-    width: 2.75rem;
-    position: relative;
-
-    &:after {
-      content: "";
-      position: absolute;
-      bottom: -1rem;
-      width: 0;
-      height: 0.15rem;
-      background-color: $white;
-      transition: 0.3s ease-in-out;
-    }
-
-    &:hover:after {
-      width: 100%;
-    }
-  }
-
   &__copyright {
     @include typography(
       $size: 1.75rem,
