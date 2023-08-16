@@ -6,6 +6,25 @@ import logo_pinterest from "../../../assets/images/icon-pinterest.svg";
 import logo_instagram from "../../../assets/images/icon-instagram.svg";
 
 export default function Footer(props) {
+  const SocialListData = [
+    {
+      icon: logo_facebook,
+      link: "#",
+    },
+    {
+      icon: logo_twitter,
+      link: "#",
+    },
+    {
+      icon: logo_pinterest,
+      link: "#",
+    },
+    {
+      icon: logo_instagram,
+      link: "#",
+    },
+  ];
+
   return (
     <footer className="footer">
       <div className="container footer__grid">
@@ -14,26 +33,13 @@ export default function Footer(props) {
         </div>
         <div className="footer__company">
           <ul className="footer__social">
-            <li className="footer__icon">
-              <a href="#">
-                <img src={logo_facebook} alt="" />
-              </a>
-            </li>
-            <li className="footer__icon">
-              <a href="#">
-                <img src={logo_twitter} alt="" />
-              </a>
-            </li>
-            <li className="footer__icon">
-              <a href="#">
-                <img src={logo_pinterest} alt="" />
-              </a>
-            </li>
-            <li className="footer__icon">
-              <a href="#">
-                <img src={logo_instagram} alt="" />
-              </a>
-            </li>
+            {SocialListData.map((social, idx) => (
+              <li key={idx} className="footer__icon">
+                <a href="#">
+                  <img src={social.icon} alt={social.link} />
+                </a>
+              </li>
+            ))}
           </ul>
           <p className="footer__copyright">
             © 2021 Loopstudios. All rights reserved.
