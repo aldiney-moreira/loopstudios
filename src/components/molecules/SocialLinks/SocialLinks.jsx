@@ -5,6 +5,8 @@ import logo_twitter from "../../../assets/images/icon-twitter.svg";
 import logo_pinterest from "../../../assets/images/icon-pinterest.svg";
 import logo_instagram from "../../../assets/images/icon-instagram.svg";
 
+import SocialIcon from "../../atoms/SocialIcon/SocialIcon";
+
 export default function SocialLinks(props) {
   const SocialLinksData = [
     {
@@ -29,11 +31,7 @@ export default function SocialLinks(props) {
     <>
       <ul className="social-links">
         {SocialLinksData.map((social, idx) => (
-          <li key={idx} className="social-links__item">
-            <a href={social.link}>
-              <img src={social.icon} alt="" />
-            </a>
-          </li>
+          <SocialIcon key={idx} link={social.link} img={social.icon} />
         ))}
       </ul>
     </>
