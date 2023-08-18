@@ -11,7 +11,7 @@ export default function Footer(props) {
         </div>
         <div className="footer__company">
           <SocialLinks />
-          <p className="footer__copyright">
+          <p className="footer__copyright text--copyright">
             © 2021 Loopstudios. All rights reserved.
           </p>
         </div>

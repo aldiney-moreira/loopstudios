@@ -51,7 +51,7 @@ export default function NavMenu(props) {
         <ul className="nav-menu__items">
           {menuItems.map((item, index) => (
             <li key={index}>
-              <a className="nav-menu__item text--big" href={item.link}>
+              <a className="nav-menu__item text--regular" href={item.link}>
                 {item.text}
               </a>
             </li>

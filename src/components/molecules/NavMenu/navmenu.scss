@@ -13,6 +13,8 @@
 
   @include for-size(screen-lg) {
     flex-direction: row;
+    align-content: space-between;
+    height: 100%;
   }
 
   &__logo {
@@ -31,11 +33,11 @@
     flex-direction: column;
     gap: 2.5rem;
     align-items: center;
-    padding-block: 5rem;
+    padding-block: 3.5rem;
 
     @include for-size(screen-sm) {
+      gap: 3.25rem;
       padding: 0;
-      margin-block: 0.75rem;
       flex-direction: row;
     }
   }

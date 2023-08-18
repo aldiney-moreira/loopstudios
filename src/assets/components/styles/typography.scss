@@ -17,13 +17,6 @@
 }
 
 .text {
-  &--description {
-    @include typography($size: 1.5rem, $line-height: 1.5, $weight: bold);
-    @include for-size(screen-md) {
-      font-size: 1.875rem;
-    }
-  }
-
   &--small {
     @include typography($size: 0.938rem);
     @include for-size(screen-md) {
@@ -31,10 +24,35 @@
     }
   }
 
+  &--regular {
+    @include typography($size: 1.5rem, $family: "Alata");
+    @include for-size(screen-md) {
+      font-size: 1.875rem;
+    }
+  }
+
   &--big {
     @include typography($size: 2rem);
     @include for-size(screen-md) {
       font-size: 2.5rem;
+    }
+  }
+
+  &--copyright {
+    @include typography(
+      $size: 1.5rem,
+      $family: "Alata",
+      $color: $very-dark-gray
+    );
+    @include for-size(screen-md) {
+      font-size: 1.875rem;
+    }
+  }
+
+  &--description {
+    @include typography($size: 1.5rem, $line-height: 1.5, $weight: bold);
+    @include for-size(screen-md) {
+      font-size: 1.875rem;
     }
   }
 

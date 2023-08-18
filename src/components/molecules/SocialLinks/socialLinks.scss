@@ -1,19 +1,7 @@
 @use "../../../assets/components/styles/index" as *;
 
 .social-links {
-  padding-bottom: 2.75rem;
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   user-select: none;
-
-  @include for-size(screen-sm) {
-    padding-block: 5rem;
-  }
-
-  @include for-size(screen-lg) {
-    padding: {
-      bottom: 2.75rem;
-      top: 0;
-    }
-  }
 }
