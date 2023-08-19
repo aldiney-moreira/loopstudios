@@ -21,7 +21,7 @@
     }
 
     @include for-size(screen-md) {
-      width: 75rem;
+      width: 72.5rem;
     }
   }
 
@@ -34,17 +34,17 @@
     }
 
     @include for-size(screen-md) {
-      width: 57.75rem;
+      width: 54rem;
       text-align: left;
       position: absolute;
       bottom: 0;
       right: 0;
       z-index: 1;
       background-color: $white;
-      $padding-about: 9.55rem;
+      $padding-about: 7.75rem;
       padding: {
         top: $padding-about;
-        left: calc($padding-about);
+        left: calc($padding-about + 0.25rem);
       }
     }
   }
