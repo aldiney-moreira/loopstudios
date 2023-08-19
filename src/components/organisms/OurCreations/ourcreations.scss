@@ -11,20 +11,22 @@
   @include for-size(screen-sm) {
     text-align: start;
     display: grid;
-    gap: 5rem;
+    gap: 7.5rem;
     grid-template-columns: 1fr auto;
+    padding-bottom: 15rem;
   }
 
   &__title {
     margin-bottom: 2.5rem;
+
     @include for-size(screen-sm) {
       margin-bottom: 0;
     }
   }
 
   &__button {
-    padding: 1rem 3rem;
-    border: 2px solid $black;
+    padding: 1rem 3.75rem;
+    border: 1.75px solid $black;
     user-select: none;
 
     &:hover {
