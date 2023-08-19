@@ -10,5 +10,6 @@
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     order: 1;
     grid-column: 1 /-1;
+    gap: 2.75rem;
   }
 }

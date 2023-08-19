@@ -1,0 +1,7 @@
+@use "../../../assets/components/styles/index" as *;
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  user-select: none;
+}

@@ -35,6 +35,10 @@
     }
   }
 
+  &__image {
+    user-select: none;
+  }
+
   &__title {
     text-align: left;
     padding: {
@@ -44,5 +48,12 @@
     bottom: 0;
     position: absolute;
     max-width: 10ch;
+
+    @include for-size(screen-sm) {
+      padding: {
+        left: 4.5rem;
+        bottom: 3.25rem;
+      }
+    }
   }
 }

@@ -4,18 +4,24 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 2rem;
   justify-content: space-between;
   align-items: center;
 
   @include for-size(screen-sm) {
+    gap: 2rem;
+  }
+
+  @include for-size(screen-lg) {
     flex-direction: row;
+    align-content: space-between;
+    height: 100%;
   }
 
   &__logo {
     height: 2.5rem;
     position: relative;
     z-index: 1;
+    user-select: none;
 
     @include for-size(screen-md) {
       height: 3rem;
@@ -27,9 +33,10 @@
     flex-direction: column;
     gap: 2.5rem;
     align-items: center;
+    padding-block: 3.5rem;
 
     @include for-size(screen-sm) {
-      margin: .75rem;
+      padding: 0;
       flex-direction: row;
     }
   }
@@ -40,14 +47,14 @@
     @include for-size(screen-md) {
       text-transform: capitalize;
     }
-  
+
     &:after {
       content: "";
       position: absolute;
       bottom: -1rem;
-      left: calc(50% - .15rem);
+      left: calc(50% - 0.15rem);
       width: 2.25rem;
-      height: .15rem;
+      height: 0.15rem;
       background-color: $white;
       transform: translateX(-50%) scaleX(0);
       transition: transform 0.3s ease-in-out;
@@ -73,13 +80,14 @@
 .nav-menu--hamburger {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   & .nav-menu__menu {
     position: absolute;
     left: -200%;
     top: 0;
     bottom: 0;
-    padding-left: $padding;
+    padding-left: $spacing-grid;
     background-color: $black;
     width: 100vw;
     height: 100vh;
@@ -89,11 +97,11 @@
       left: 0;
       gap: 0.313rem;
     }
-    
+
     @include for-size(screen-md) {
       gap: 6.875rem;
     }
-    
+
     @include for-size(screen-md) {
       position: static;
       background-color: transparent;
@@ -114,19 +122,22 @@
     }
   }
 
-  & .nav-menu__item {
+  & .active .nav-menu__item {
     text-transform: uppercase;
+    font-size: 2rem;
+    font-family: inherit;
+
     @include for-size(screen-md) {
       text-transform: capitalize;
     }
   }
-  
+
   & .nav-menu__hamburger {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 0.5rem;
-    
+
     @include for-size(screen-md) {
       display: none;
     }
@@ -144,4 +155,3 @@
     }
   }
 }
-

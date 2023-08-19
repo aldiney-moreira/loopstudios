@@ -1,49 +1,51 @@
 @use "../../../assets/components/styles/index" as *;
 
 .about {
-  font-family: 'Josefin Sans', sans-serif;
-  
+  font-family: "Josefin Sans", sans-serif;
+
   &__container {
     margin-block: 10rem;
 
-    @include for-size(screen-lg) {
+    @include for-size(screen-md) {
+      margin-block: 15rem;
       position: relative;
       display: flex;
     }
   }
 
   &__image {
-    margin-bottom: 5rem;
     display: block;
-    
-    @include for-size(screen-lg) {
-      margin-bottom: 0;
-      width: 65%;
-      width: 80rem;
+
+    @include for-size(screen-md, $width: max) {
+      margin-bottom: 5rem;
+    }
+
+    @include for-size(screen-md) {
+      width: 72.5rem;
     }
   }
 
   &__text {
     text-align: center;
-    max-width: 43ch;
     margin: 0 auto;
-    max-width: 25.5rem;
 
-    @include for-size(screen-sm) {
-      max-width: 55.75rem;
+    @include for-size(screen-sm, $width: max) {
+      max-width: 43ch;
     }
-    
-    @include for-size(screen-lg) {
+
+    @include for-size(screen-md) {
+      width: 54rem;
       text-align: left;
       position: absolute;
       bottom: 0;
       right: 0;
       z-index: 1;
       background-color: $white;
+      $padding-about: 7.75rem;
       padding: {
-        top: 9.5rem;
-        left: 9.5rem;
-      };
+        top: $padding-about;
+        left: calc($padding-about + 0.25rem);
+      }
     }
   }
 

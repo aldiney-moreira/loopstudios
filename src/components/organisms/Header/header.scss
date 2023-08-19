@@ -4,7 +4,7 @@
   background: {
     image: url("../../../assets/images/mobile/image-hero.jpg");
     size: cover;
-    position: center;
+    position: right top;
   }
   color: $white;
   padding: 4rem 0;
@@ -12,7 +12,10 @@
   position: relative;
 
   @include for-size(screen-md) {
-    padding-top: 7.75rem;
+    padding: {
+      top: 7.25rem;
+      bottom: 2.5rem;
+    }
     background-image: url("../../../assets/images/desktop/image-hero.jpg");
   }
 
@@ -23,8 +26,11 @@
     padding-bottom: 1.5rem;
     border: 0.25rem solid $white;
     @include for-size(screen-md) {
-      max-width: 60.5rem;
+      max-width: 64.25rem;
       font-size: 7rem;
+      margin-block: 12rem;
+      padding: 3.5rem;
+      padding-bottom: 2.75rem;
     }
   }
 }

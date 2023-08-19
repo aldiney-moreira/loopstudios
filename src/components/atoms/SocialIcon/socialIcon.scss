@@ -1,0 +1,24 @@
+@use "../../../assets/components/styles/index" as *;
+
+.social-icon {
+  width: 2.25rem;
+  position: relative;
+
+  @include for-size(screen-sm) {
+    width: 2.5rem;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    width: 0;
+    height: 0.15rem;
+    background-color: $white;
+    transition: 0.3s ease-in-out;
+  }
+
+  &:hover:after {
+    width: 100%;
+  }
+}
