@@ -1,27 +1,43 @@
 @mixin for-size($size, $width: min) {
   @if $size == screen-sm {
-      @media (#{$width}-width: $screen-sm) {
-          @content;
-      }
+    @media (#{$width}-width: $screen-sm) {
+      @content;
+    }
   } @else if $size == screen-md {
-      @media (#{$width}-width: $screen-md) {
-          @content;
-      }
+    @media (#{$width}-width: $screen-md) {
+      @content;
+    }
   } @else if $size == screen-lg {
-      @media (#{$width}-width: $screen-lg) {
-          @content;
-      }
+    @media (#{$width}-width: $screen-lg) {
+      @content;
+    }
   } @else if $size == screen-xl {
-      @media (#{$width}-width: $screen-xl) {
-          @content;
-      }
+    @media (#{$width}-width: $screen-xl) {
+      @content;
+    }
   } @else if $size == screen-grid {
-      @media (#{$width}-width: $screen-grid) {
-          @content;
-      }
+    @media (#{$width}-width: $screen-grid) {
+      @content;
+    }
   } @else {
-      @media (#{$width}-width: $size) {
-          @content;
-      }
+    @media (#{$width}-width: $size) {
+      @content;
+    }
   }
+}
+
+@mixin typography(
+  $color: inherit,
+  $family: "Josefin Sans",
+  $size: 1rem,
+  $line-height: 1,
+  $weight: normal
+) {
+  color: $color;
+  font: {
+    family: $family, sans-serif;
+    size: $size;
+    weight: $weight;
+  }
+  line-height: $line-height;
 }

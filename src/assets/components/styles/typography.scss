@@ -1,21 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 
-@mixin typography(
-  $color: inherit,
-  $family: "Josefin Sans",
-  $size: 1rem,
-  $line-height: 1,
-  $weight: normal
-) {
-  color: $color;
-  font: {
-    family: $family, sans-serif;
-    size: $size;
-    weight: $weight;
-  }
-  line-height: $line-height;
-}
-
 .text {
   &--small {
     @include typography($size: 1.5rem, $family: "Alata");
