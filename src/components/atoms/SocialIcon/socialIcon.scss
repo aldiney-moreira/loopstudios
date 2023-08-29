@@ -2,23 +2,10 @@
 
 .social-icon {
   width: 2.25rem;
-  position: relative;
 
   @include for-size(screen-sm) {
     width: 2.5rem;
   }
 
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: -1rem;
-    width: 0;
-    height: 0.15rem;
-    background-color: $white;
-    transition: 0.3s ease-in-out;
-  }
-
-  &:hover:after {
-    width: 100%;
-  }
+  @include hover-underline($width: 100%, $bottom: 1.25rem);
 }

@@ -41,3 +41,23 @@
   }
   line-height: $line-height;
 }
+
+@mixin hover-underline($width, $bottom) {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    bottom: -#{$bottom};
+    height: 0.25rem;
+    background-color: $white;
+    transition: 0.3s ease-in-out;
+  }
+
+  &:hover:after {
+    width: $width;
+  }
+}
