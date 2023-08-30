@@ -16,10 +16,6 @@
   &__image {
     display: block;
 
-    @include for-size(screen-md, $width: max) {
-      margin-bottom: 5rem;
-    }
-
     @include for-size(screen-md) {
       width: 72.5rem;
     }
@@ -31,6 +27,10 @@
 
     @include for-size(screen-sm, $width: max) {
       max-width: 43ch;
+    }
+
+    @include for-size(screen-md, $width: max) {
+      margin-top: 5rem;
     }
 
     @include for-size(screen-md) {
