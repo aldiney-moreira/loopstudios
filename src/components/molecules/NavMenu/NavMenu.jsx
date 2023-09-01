@@ -1,7 +1,7 @@
 import "./navMenu.scss";
 
 import React, { useState } from "react";
-import logo from "../../../assets/images/logo.svg";
+import logo from "/images/logo.svg";
 
 export default function NavMenu(props) {
   const DEFAULT_MENU_ITEMS = [

@@ -1,9 +1,9 @@
 import "./socialLinks.scss";
 
-import logo_facebook from "../../../assets/images/icon-facebook.svg";
-import logo_twitter from "../../../assets/images/icon-twitter.svg";
-import logo_pinterest from "../../../assets/images/icon-pinterest.svg";
-import logo_instagram from "../../../assets/images/icon-instagram.svg";
+import logo_facebook from "/images/icon-facebook.svg";
+import logo_twitter from "/images/icon-twitter.svg";
+import logo_pinterest from "/images/icon-pinterest.svg";
+import logo_instagram from "/images/icon-instagram.svg";
 
 import SocialIcon from "../../atoms/SocialIcon/SocialIcon";
 
