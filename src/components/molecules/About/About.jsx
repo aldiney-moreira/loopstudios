@@ -8,11 +8,18 @@ export default function About(props) {
       <div className="about__container">
         <picture className="about__image">
           <source
+            width="654"
+            height="448"
             srcSet={image_interactive_mobile}
             media="(min-width: 768px)"
             alt="Man using VR"
           />
-          <img src={image_interactive_desktop} alt="Man using VR" />
+          <img
+            width="731"
+            height="500"
+            src={image_interactive_desktop}
+            alt="Man using VR"
+          />
         </picture>
         <div className="about__text">
           <h2 className="about__title text--h2 text--black">

@@ -31,7 +31,13 @@ export default function SocialLinks(props) {
     <>
       <ul className="social-links">
         {SocialLinksData.map((social, idx) => (
-          <SocialIcon key={idx} link={social.link} img={social.icon} />
+          <SocialIcon
+            width="24"
+            height="20"
+            key={idx}
+            link={social.link}
+            img={social.icon}
+          />
         ))}
       </ul>
     </>
