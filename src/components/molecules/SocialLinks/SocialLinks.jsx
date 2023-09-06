@@ -10,18 +10,22 @@ import SocialIcon from "../../atoms/SocialIcon/SocialIcon";
 export default function SocialLinks(props) {
   const SocialLinksData = [
     {
+      name: "facebook",
       icon: logo_facebook,
       link: "#",
     },
     {
+      name: "twitter",
       icon: logo_twitter,
       link: "#",
     },
     {
+      name: "pinterest",
       icon: logo_pinterest,
       link: "#",
     },
     {
+      name: "instagram",
       icon: logo_instagram,
       link: "#",
     },
@@ -37,6 +41,7 @@ export default function SocialLinks(props) {
             key={idx}
             link={social.link}
             img={social.icon}
+            alt={social.name}
           />
         ))}
       </ul>
