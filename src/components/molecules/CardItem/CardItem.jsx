@@ -11,7 +11,12 @@ export default function CardItem({ background, text, link }) {
           srcSet={background_mobile}
           media="(max-width: 768px)"
         />
-        <img width="256" height="450" src={background_desktop} />
+        <img
+          width="256"
+          height="450"
+          src={background_desktop}
+          alt={`Learn more about our "${text}".`}
+        />
       </picture>
       <p className="card-list__title text--h3">{text}</p>
     </a>
