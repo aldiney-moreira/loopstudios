@@ -64,4 +64,4 @@ In essence, this project encapsulated a multifaceted learning experience. It all
 
 ## Acknowledgments
 
-I would like to express my heartfelt gratitude to [@Renato DelPupo](https://github.com/renatodelpupo) and [@Kelly](https://github.com/kellycesario) Cesário for their invaluable support. Your willingness to patiently answer my questions and generously dedicate your time to review my code, providing insightful suggestions for improvements, has been immensely helpful.
+I would like to express my heartfelt gratitude to [@Renato DelPupo](https://github.com/renatodelpupo) and [@Kelly Cesário](https://github.com/kellycesario) for their invaluable support. Your willingness to patiently answer my questions and generously dedicate your time to review my code, providing insightful suggestions for improvements, has been immensely helpful.
