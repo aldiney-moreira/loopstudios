@@ -15,7 +15,7 @@ export default function CardItem({ background, text, link }) {
           width="256"
           height="450"
           src={background_desktop}
-          alt={`Learn more about our "${text}".`}
+          alt={`Discover more about "${text}".`}
           className="card-list__image"
         />
       </picture>
