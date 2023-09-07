@@ -4,7 +4,7 @@ export default function CardItem({ background, text, link }) {
   const [background_mobile, background_desktop] = background;
   return (
     <a className="card-list__item" href={link}>
-      <picture className="card-list__image">
+      <picture>
         <source
           width="654"
           height="240"
@@ -16,6 +16,7 @@ export default function CardItem({ background, text, link }) {
           height="450"
           src={background_desktop}
           alt={`Learn more about our "${text}".`}
+          className="card-list__image"
         />
       </picture>
       <p className="card-list__title text--h3">{text}</p>

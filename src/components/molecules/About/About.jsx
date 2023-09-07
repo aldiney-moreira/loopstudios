@@ -6,7 +6,7 @@ export default function About(props) {
   return (
     <article className="about container">
       <div className="about__container">
-        <picture className="about__image">
+        <picture>
           <source
             width="654"
             height="448"
@@ -19,6 +19,7 @@ export default function About(props) {
             height="500"
             src={image_interactive_desktop}
             alt="Man using VR"
+            className="about__image"
           />
         </picture>
         <div className="about__text">
