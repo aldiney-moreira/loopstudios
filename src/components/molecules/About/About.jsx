@@ -1,6 +1,6 @@
 import "./about.scss";
-import image_interactive_mobile from "../../../assets/images/mobile/image-interactive.jpg";
-import image_interactive_desktop from "../../../assets/images/desktop/image-interactive.jpg";
+import image_interactive_mobile from "/images/mobile/image-interactive.jpg";
+import image_interactive_desktop from "/images/desktop/image-interactive.jpg";
 
 export default function About(props) {
   return (

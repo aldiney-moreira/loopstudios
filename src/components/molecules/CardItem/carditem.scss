@@ -4,6 +4,7 @@
   &__item {
     position: relative;
     color: $gray;
+
     &::before {
       content: "";
       transition: 0.3s;
@@ -25,6 +26,7 @@
         );
       }
     }
+
     &:hover {
       &::before {
         background: rgba(255, 255, 255, 0.7);
@@ -49,7 +51,7 @@
     position: absolute;
     max-width: 10ch;
 
-    @include for-size(screen-sm) {
+    @include for-size(screen-md) {
       padding: {
         left: 3.5rem;
         bottom: 3.25rem;
