@@ -64,6 +64,7 @@ In essence, this project encapsulated a multifaceted learning experience. It all
 
 - LinkedIn - [@Aldiney Moreira Ribeiro](https://www.linkedin.com/in/aldiney-moreira/)
 - Frontend Mentor - [@aldiney-moreira](https://www.frontendmentor.io/profile/aldiney-moreira)
+- DEV Community - [@aldiney-moreira](https://dev.to/aldineymoreira)
 
 ## Acknowledgments
 
