@@ -43,9 +43,13 @@ export default function NavMenu(props) {
   return (
     <nav className={classStylesNavMenu.nav}>
       <a href="#">
-        <picture className="nav-menu__picture">
-          <img className="nav-menu__logo" src={logo} alt="Loopstudios" />
-        </picture>
+        <img
+          width="192"
+          height="32"
+          className="nav-menu__logo"
+          src={logo}
+          alt="Loopstudios"
+        />
       </a>
       <div className={classStylesNavMenu.menu}>
         <ul className="nav-menu__items">
