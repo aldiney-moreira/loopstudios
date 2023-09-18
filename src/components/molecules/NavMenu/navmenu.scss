@@ -63,6 +63,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: $spacing-grid;
+  top: 0;
+  left: 0;
+  z-index: 2;
 
   & .nav-menu__menu {
     position: absolute;
