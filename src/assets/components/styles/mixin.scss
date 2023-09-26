@@ -42,7 +42,7 @@
   line-height: $line-height;
 }
 
-@mixin hover-underline($width, $bottom) {
+@mixin hover-underline($width, $bottom, $mobileVersion: true) {
   position: relative;
   display: flex;
   justify-content: center;
@@ -55,6 +55,12 @@
     height: 0.25rem;
     background-color: $white;
     transition: 0.3s ease-in-out;
+
+    @if $mobileVersion {
+      @include for-size(screen-md, $width: max) {
+        bottom: calc(-#{$bottom} + 50%);
+      }
+    }
   }
 
   &:hover:after {

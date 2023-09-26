@@ -7,5 +7,9 @@
     width: 2.5rem;
   }
 
-  @include hover-underline($width: 100%, $bottom: 1.25rem);
+  @include hover-underline(
+    $width: 100%,
+    $bottom: 1.25rem,
+    $mobileVersion: false
+  );
 }
