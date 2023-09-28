@@ -8,6 +8,7 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Preview](#preview)
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -34,6 +35,10 @@ Users should be able to:
 ### Preview
 
 [preview.webm](https://github.com/aldiney-moreira/loopstudios-landing-page/assets/124083679/fe37140c-b3ce-4807-a8fd-901db017af6f)
+
+### Links
+
+- Live Site URL: https://aldiney-moreira.github.io/loopstudios/
 
 ## My process
 
