@@ -34,6 +34,11 @@ export default function NavMenu(props) {
     setIsOpen(!isOpen);
   };
 
+  window.addEventListener("scroll", () => {
+    const $nav = document.querySelector("#nav-menu");
+    $nav.classList.toggle("scroll", window.scrollY > 75);
+  });
+
   const classStylesNavMenu = {
     nav: `nav-menu${props.hamburger ? "--hamburger" : ""}`,
     menu: `nav-menu__menu ${props.hamburger && isOpen ? "active" : ""}`,
@@ -41,7 +46,7 @@ export default function NavMenu(props) {
   };
 
   return (
-    <nav className={classStylesNavMenu.nav}>
+    <nav id="nav-menu" className={classStylesNavMenu.nav}>
       <a href="#">
         <img
           width="192"
