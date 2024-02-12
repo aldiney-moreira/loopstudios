@@ -1,6 +1,6 @@
 import "./cardList.scss";
-import cards from "../../../database/cards.json";
 
+import cards from "../../../database/cards.json";
 import CardItem from "../CardItem/CardItem";
 
 export default function CardList(props) {
