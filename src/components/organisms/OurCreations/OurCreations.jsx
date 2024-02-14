@@ -1,6 +1,5 @@
 import "./ourCreations.scss";
-
-import CardList from "../../molecules/CardList/cardList";
+import CardList from "../../molecules/CardList/CardList";
 
 export default function OurCreations(props) {
   return (

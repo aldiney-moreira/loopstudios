@@ -1,5 +1,4 @@
 import "./cardList.scss";
-
 import cards from "../../../database/cards.json";
 import CardItem from "../CardItem/CardItem";
 

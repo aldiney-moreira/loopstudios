@@ -1,5 +1,4 @@
 import "./navMenu.scss";
-
 import React, { useState } from "react";
 import logo from "/images/logo.svg";
 
