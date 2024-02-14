@@ -1,6 +1,6 @@
 # Frontend Mentor - Loopstudios landing page solution
 
-This is a solution to the Loopstudios landing page challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects. This project is hosted on GitHub Pages and can be accessed through the following link: [Loopstudios](https://aldiney-moreira.github.io/loopstudios/).
+This is a solution to the Loopstudios landing page challenge on Frontend Mentor. This project is hosted on GitHub Pages and can be accessed through the following link: [Loopstudios](https://aldiney-moreira.github.io/loopstudios/).
 
 ## Table of contents
 
