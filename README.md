@@ -44,16 +44,12 @@ Users should be able to:
 
 ### Built with
 
-- HTML
-  - Semantic HTML5 markup
-  - BEM
-- CSS
-  - Flexbox
-  - CSS Grid
-  - SASS
-- React
-- Mobile-first workflow
-- Atomic Design
+- HTML: Semantic HTML5 | BEM;
+- CSS: Flexbox | CSS Grid;
+- SASS;
+- React;
+- Mobile-first workflow;
+- Atomic Design;
 
 ### What I learned
 
@@ -67,7 +63,7 @@ In essence, this project encapsulated a multifaceted learning experience. It all
 
 ## Author
 
-- LinkedIn - [@Aldiney Moreira Ribeiro](https://www.linkedin.com/in/aldiney-moreira/)
+- LinkedIn - [@Aldiney Moreira](https://www.linkedin.com/in/aldiney-moreira/)
 - Frontend Mentor - [@aldiney-moreira](https://www.frontendmentor.io/profile/aldiney-moreira)
 - DEV Community - [@aldiney-moreira](https://dev.to/aldineymoreira)
 
