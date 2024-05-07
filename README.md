@@ -5,13 +5,7 @@ This is a solution to the Loopstudios landing page challenge on Frontend Mentor.
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Preview](#preview)
-  - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -44,12 +38,16 @@ Users should be able to:
 
 ### Built with
 
-- HTML: Semantic HTML5 | BEM;
-- CSS: Flexbox | CSS Grid;
-- SASS;
-- React;
-- Mobile-first workflow;
-- Atomic Design;
+- HTML
+  - Semantic HTML5
+  - BEM
+- CSS
+  - Flexbox
+  - CSS Grid
+- SASS
+- React
+- Mobile-first workflow
+- Atomic Design
 
 ### What I learned
 
