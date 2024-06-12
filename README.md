@@ -39,13 +39,9 @@ Users should be able to:
 ### Built with
 
 - HTML
-  - Semantic HTML5
-  - BEM
-- CSS
-  - Flexbox
-  - CSS Grid
 - SASS
 - React
+- BEM
 - Mobile-first workflow
 - Atomic Design
 
