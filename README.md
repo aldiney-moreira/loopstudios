@@ -30,10 +30,6 @@ Users should be able to:
 
 [preview.webm](https://github.com/aldiney-moreira/loopstudios-landing-page/assets/124083679/fe37140c-b3ce-4807-a8fd-901db017af6f)
 
-### Links
-
-- Live Site URL: https://aldiney-moreira.github.io/loopstudios/
-
 ## My process
 
 ### Built with
