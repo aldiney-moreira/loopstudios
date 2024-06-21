@@ -36,7 +36,7 @@ Users should be able to:
 
 - HTML
 - SASS
-- React
+- React.js
 - BEM
 - Mobile-first workflow
 - Atomic Design
