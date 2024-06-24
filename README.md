@@ -26,10 +26,6 @@ Users should be able to:
 | ------- | 
 | ![desktop-preview](https://github.com/aldiney-moreira/loopstudios-landing-page/assets/124083679/daa9c81e-444e-45c3-b1b2-02fd7841c8e4) |
 
-### Preview
-
-[preview.webm](https://github.com/aldiney-moreira/loopstudios-landing-page/assets/124083679/fe37140c-b3ce-4807-a8fd-901db017af6f)
-
 ## My process
 
 ### Built with
