@@ -30,9 +30,9 @@ Users should be able to:
 
 ### Built with
 
-- `HTML`
-- `SASS`
-- `React.js`
+- HTML
+- SASS
+- React.js
 - BEM
 - Mobile-first workflow
 - Atomic Design
