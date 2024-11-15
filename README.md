@@ -17,9 +17,6 @@ Users should be able to:
 
 - [X] View the optimal layout for the site depending on their device's screen size
 - [X] See hover states for all interactive elements on the page
-- [ ] Navigate between pages
-- [ ] Enable the 'See All' button to display all 'Our Creations'
-- [ ] Access card content
 
 ### Screenshot
 | Desktop |
